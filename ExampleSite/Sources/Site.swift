@@ -4,7 +4,7 @@ import Ignite
 @main
 struct IgniteWebsite {
     static func main() async {
-        var site = CommunityKitSite()
+        var site = ExampleSite()
 
         do {
             try await site.publish()
@@ -14,13 +14,13 @@ struct IgniteWebsite {
     }
 }
 
-struct CommunityKitSite: Site {
-    var name = "CommunityKit"
-    var titleSuffix = " – The Best Way to Experience WWDC"
-    var url = URL(static: "https://www.communitykit.social")
+struct ExampleSite: Site {    
+    var name = "Hello World"
+    var titleSuffix = " – My Awesome Site"
+    var url = URL(static: "https://www.example.com")
     var builtInIconsEnabled = true
 
-    var author = "CommunityKit Team"
+    var author = "John Appleseed"
 
     var homePage = Home()
     var layout = MainLayout()
