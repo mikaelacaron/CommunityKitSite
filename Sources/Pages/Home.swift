@@ -50,9 +50,11 @@ struct Home: StaticPage {
                     .resizable()
                     .frame(width: 900)
                 Group {
-                    Text("• Bullet point 1")
-                    Text("• Bullet point 2")
-                    Text("• Bullet point 3")
+                    Text("• Gather with the community of developers and designers")
+                    Text("• Network with new friends and old")
+                    Text("• Get the cutting edge of WWDC 25")
+                    Text("• Attend events with us and other community staples")
+                    Text("• Join us for LIVE podcast recordings")
                 }
                 .font(.title1)
                 .fontWeight(.semibold)
@@ -61,5 +63,56 @@ struct Home: StaticPage {
             }
             .padding(75)
         }
+        
+        ZStack {
+            Grid {
+                Image(decorative: "/images/bluebg.jpg")
+                        .resizable()
+            }
+            .columns(1)
+            
+            VStack(alignment: .center) {
+                Image(decorative: "/images/mail.png")
+                    .resizable()
+                    .frame(height: 400)
+                VStack {
+                    Text("join the")
+                        .font(.title2)
+                    Text("Mailing List")
+                        .font(.title1)
+                        .fontWeight(.bold)
+                }
+                .foregroundStyle(.black)
+            }
+        }
+        
+        ZStack(alignment: .topLeading) {
+            Grid {
+                Image(decorative: "/images/light-office.jpg")
+                    .resizable()
+            }
+            .columns(1)
+            
+            VStack(alignment: .leading) {
+                Image("/images/broughtheader.png", description: "Brought to you by")
+                    .resizable()
+                    .frame(width: 900)
+                Group {
+                    Text("• Tamia James")
+                    Text("• Adrian Eves")
+                    Text("• Mikaela Caron")
+                    Text("• Paul Hudson")
+                    Text("• Michie Ang")
+                    Text("• Chris Wu")
+                    Text("• Frank Foster")
+                }
+                .font(.title1)
+                .fontWeight(.semibold)
+                .foregroundStyle(.black)
+                .padding(.top, 60)
+            }
+            .padding(75)
+        }
+        
     }
 }
