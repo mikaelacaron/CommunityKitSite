@@ -12,12 +12,7 @@ struct Home: StaticPage {
             }
             .background(.lightGray)
         
-        ZStack {
-            Grid {
-                Image(decorative: "/images/blackbg.jpg")
-                        .resizable()
-            }
-            .columns(1)
+  
             
             VStack(alignment: .center) {
                 VStack {
@@ -35,19 +30,16 @@ struct Home: StaticPage {
                         .fontWeight(.bold)
                 }
             }
-        }
         
-        ZStack(alignment: .topLeading) {
-            Grid {
-                Image(decorative: "/images/light-office.jpg")
-                    .resizable()
-            }
-            .columns(1)
+        
+
+      
             
             VStack(alignment: .leading) {
                 Image("/images/whatis.png", description: "What is CommunityKit?")
                     .resizable()
                     .frame(width: 900)
+                
                 Group {
                     Text("• Gather with the community of developers and designers")
                     Text("• Network with new friends and old")
@@ -55,20 +47,18 @@ struct Home: StaticPage {
                     Text("• Attend events with us and other community staples")
                     Text("• Join us for LIVE podcast recordings")
                 }
-                .font(.title1)
+                .font(.title3)
                 .fontWeight(.semibold)
-                .foregroundStyle(.black)
                 .padding(.top, 60)
             }
             .padding(75)
-        }
+        
         
         ZStack {
             Grid {
                 Image(decorative: "/images/bluebg.jpg")
                         .resizable()
             }
-            .columns(1)
             
             Grid {
                 VStack {
@@ -89,12 +79,7 @@ struct Home: StaticPage {
     
         
         
-        ZStack(alignment: .topLeading) {
-            Grid {
-                Image(decorative: "/images/light-office.jpg")
-                    .resizable()
-            }
-            .columns(1)
+    
             
             VStack(alignment: .leading) {
                 Image("/images/broughtheader.png", description: "Brought to you by")
@@ -111,11 +96,11 @@ struct Home: StaticPage {
                 }
                 .font(.title1)
                 .fontWeight(.semibold)
-                .foregroundStyle(.black)
+            
                 .padding(.top, 60)
             }
             .padding(75)
-        }
+        
         
     }
 }
