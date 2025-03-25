@@ -85,5 +85,34 @@ struct Home: StaticPage {
                 .foregroundStyle(.black)
             }
         }
+        
+        ZStack(alignment: .topLeading) {
+            Grid {
+                Image(decorative: "/images/light-office.jpg")
+                    .resizable()
+            }
+            .columns(1)
+            
+            VStack(alignment: .leading) {
+                Image("/images/broughtheader.png", description: "Brought to you by")
+                    .resizable()
+                    .frame(width: 900)
+                Group {
+                    Text("• Tamia James")
+                    Text("• Adrian Eves")
+                    Text("• Mikaela Caron")
+                    Text("• Paul Hudson")
+                    Text("• Michie Ang")
+                    Text("• Chris Wu")
+                    Text("• Frank Foster")
+                }
+                .font(.title1)
+                .fontWeight(.semibold)
+                .foregroundStyle(.black)
+                .padding(.top, 60)
+            }
+            .padding(75)
+        }
+        
     }
 }
