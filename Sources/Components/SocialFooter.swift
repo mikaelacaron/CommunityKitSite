@@ -10,15 +10,11 @@ import Ignite
 
 struct SocialFooter: HTML {
     let icons = [
-        Image(systemName: "twitter"),
-        Image(systemName: "bluesky"),
         Image(systemName: "mastodon")
     ]
 
     let urlStrings = [
-        "https://twitter.com/twostraws",
-        "https://youtube.com/@twostraws",
-        "https://mastodon.social/@twostraws"
+        "https://mastodon.social/@communitykit"
     ]
 
     var body: some HTML {
@@ -30,6 +26,17 @@ struct SocialFooter: HTML {
                     .relationship(.noOpener, .noReferrer)
                     .margin(.trailing, 20)
             }
+            
+            Link(
+                Image("/images/bluesky.svg", description: "bluesky logo")
+                    .resizable()
+                    .frame(width: 36)
+                 , target: "https://bsky.app/profile/communitykit.bsky.social")
+                .role(.secondary)
+                .target(.blank)
+                .relationship(.noOpener, .noReferrer)
+                .margin(.trailing, 20)
+            
         }
         .horizontalAlignment(.center)
         .margin(.top, .xLarge)
