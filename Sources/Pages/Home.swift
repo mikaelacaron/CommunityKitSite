@@ -71,10 +71,7 @@ struct Home: StaticPage {
             }
             .columns(1)
             
-            VStack(alignment: .center) {
-                Image(decorative: "/images/mail.png")
-                    .resizable()
-                    .frame(height: 400)
+            Grid {
                 VStack {
                     Text("join the")
                         .font(.title2)
@@ -83,8 +80,15 @@ struct Home: StaticPage {
                         .fontWeight(.bold)
                 }
                 .foregroundStyle(.black)
+                
+                Script(file: "https://communitykit.kit.com/28f3427844/index.js")
+                    .data("uid", "28f3427844")
+         
             }
+            
         }
+    
+        
         
         ZStack(alignment: .topLeading) {
             Grid {
