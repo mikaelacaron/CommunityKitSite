@@ -72,7 +72,7 @@ struct Home: StaticPage {
             .columns(1)
             
             VStack(alignment: .center) {
-                Image("/images/mail.png", description: "CommunityKit")
+                Image(decorative: "/images/mail.png")
                     .resizable()
                     .frame(height: 400)
                 VStack {
