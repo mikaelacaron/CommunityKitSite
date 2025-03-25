@@ -31,11 +31,6 @@ struct Home: StaticPage {
             }
         }
         
-        
-        
-        
-        
-        
         ZStack {
             Grid {
                 Image(decorative: "/images/bluebg.jpg")
@@ -56,7 +51,26 @@ struct Home: StaticPage {
                     .data("uid", "28f3427844")
                 
             }
-            
         }
+        
+        VStack(alignment: .leading) {
+            Text("Brought to you by:")
+                .font(.title1)
+                .fontWeight(.bold)
+            
+            Group {
+                Text("• Tamia James")
+                Text("• Adrian Eves")
+                Text("• Mikaela Caron")
+                Text("• Paul Hudson")
+                Text("• Michie Ang")
+                Text("• Chris Wu")
+                Text("• Frank Foster")
+            }
+            .font(.title3)
+            .fontWeight(.semibold)
+            .padding(.top, 60)
+        }
+        .padding(75)
     }
 }
