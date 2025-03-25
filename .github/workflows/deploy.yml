@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Ignite
         run: |
-          git clone https://github.com/twostraws/ignite  
+          git clone https://github.com/twostraws/Ignite  
           cd Ignite
           make
           make install
