@@ -1,6 +1,5 @@
 import Foundation
 import Ignite
-import SwiftUI
 
 struct Home: StaticPage {
     var title = "CommunityKit 1.0"
