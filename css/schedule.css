@@ -1,0 +1,227 @@
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Schedule Container */
+.schedule-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(76, 217, 100, 0.1);
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+}
+
+.schedule-table th {
+    padding: 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.schedule-table th.time-col {
+    background: #2FB344;
+    color: white;
+    width: 180px;
+}
+
+.schedule-table th.event-col {
+    background: #8ACF73;
+    color: #000000;
+}
+
+.schedule-table th.location-col {
+    background: #4845AC;
+    color: white;
+}
+
+.schedule-table td {
+    padding: 1.25rem;
+    border-bottom: 1px solid rgba(76, 217, 100, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tr:hover td {
+    background-color: rgba(76, 217, 100, 0.02);
+}
+
+.schedule-table .time-col {
+    color: #2FB344;
+    font-weight: 600;
+}
+
+.schedule-table .event-col {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.schedule-table .location-col {
+    color: #444;
+}
+
+/* Special Event Types */
+.schedule-table .all-rooms {
+    color: #2FB344;
+    font-weight: 600;
+}
+
+.schedule-table .lunch-break {
+    background-color: rgba(255, 243, 205, 0.5);
+}
+
+.schedule-table .hackathon-space {
+    background-color: rgba(76, 217, 100, 0.1);
+}
+
+/* Day Headers */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    color: #009B7F !important;
+}
+
+h2:first-of-type {
+    margin-top: 2rem;
+}
+
+/* Hero Section */
+.main-section.pt-0.pb-0 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #2FB344 0%, #8ACF73 100%) !important;
+}
+
+.main-section.pt-0.pb-0::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    mix-blend-mode: overlay;
+}
+
+.main-section.pt-0.pb-0::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+    mix-blend-mode: overlay;
+}
+
+.display-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+/* Schedule Day Section */
+.schedule-day {
+    margin-bottom: 60px;
+}
+
+.schedule-day h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.schedule-day:nth-child(1) h3 {
+    color: #00B794; /* Green */
+}
+
+.schedule-day:nth-child(2) h3 {
+    color: #2196f3; /* Blue */
+}
+
+.schedule-day:nth-child(3) h3 {
+    color: #f44336; /* Red */
+}
+
+.schedule-day h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.schedule-day:nth-child(1) h3::after {
+    background: linear-gradient(90deg, rgba(0, 183, 148, 0.2) 0%, rgba(61, 214, 182, 0.2) 100%);
+}
+
+.schedule-day:nth-child(2) h3::after {
+    background: linear-gradient(90deg, rgba(33, 150, 243, 0.2) 0%, rgba(66, 165, 245, 0.2) 100%);
+}
+
+.schedule-day:nth-child(3) h3::after {
+    background: linear-gradient(90deg, rgba(244, 67, 54, 0.2) 0%, rgba(239, 83, 80, 0.2) 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .schedule-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .schedule-table .time-col {
+        width: 140px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 1rem;
+    }
+
+    .display-1 {
+        font-size: 2.5rem;
+    }
+
+    .schedule-day h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule-table th,
+    .schedule-table td {
+        padding: 0.875rem;
+    }
+
+    .display-1 {
+        font-size: 2rem;
+    }
+
+    .schedule-day h3 {
+        font-size: 1.5rem;
+    }
+} 
