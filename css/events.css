@@ -1,0 +1,151 @@
+/* Card Styles */
+.timeline-content {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 24px;
+    max-width: 800px;
+}
+
+.timeline-content h4 {
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.25rem;
+}
+
+.timeline-content h4 i {
+    color: #666;
+    font-size: 1.2em;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.timeline-content p, .adventure-item p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Adventure Section Styles */
+.adventure-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 64px;
+    padding: 0 16px;
+}
+
+.adventure-item {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.adventure-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adventure-icon i {
+    color: #666;
+    font-size: 2em;
+}
+
+.adventure-item h4 {
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Events Container */
+.events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Day Divider */
+.day-divider {
+    color: #2196f3;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 48px 0 24px;
+    position: relative;
+    text-align: center;
+}
+
+.day-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    z-index: 0;
+}
+
+.day-divider span {
+    position: relative;
+    background: white;
+    padding: 0 16px;
+    z-index: 1;
+}
+
+/* Section Headers */
+.section-title {
+    margin: 64px 0 48px;
+    text-align: center;
+}
+
+.section-title h2 {
+    color: #2196f3;
+    font-weight: 600;
+}
+
+.day-header {
+    color: #2196f3;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.day-subheader {
+    color: #2196f3;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 48px 0 32px;
+}
+
+/* Hero Section Adjustment */
+.main-section.pt-0.pb-0.dark-1-color-bg {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .timeline-content, .adventure-section, .events-container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+} 
