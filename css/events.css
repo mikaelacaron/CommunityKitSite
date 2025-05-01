@@ -1,3 +1,8 @@
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
 /* Card Styles */
 .timeline-content {
     background: white;
@@ -7,6 +12,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto 24px;
     max-width: 800px;
+    border: 1px solid rgba(0, 183, 148, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 183, 148, 0.1);
 }
 
 .timeline-content h4 {
@@ -39,6 +51,19 @@
     max-width: 800px;
     margin: 0 auto 64px;
     padding: 0 16px;
+    position: relative;
+}
+
+.adventure-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: linear-gradient(135deg, rgba(0, 183, 148, 0.05) 0%, rgba(61, 214, 182, 0.05) 100%);
+    border-radius: 24px;
+    z-index: -1;
 }
 
 .adventure-item {
@@ -48,13 +73,21 @@
     padding: 32px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 1px solid rgba(0, 183, 148, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.adventure-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 183, 148, 0.1);
 }
 
 .adventure-icon {
     width: 80px;
     height: 80px;
     margin: 0 auto 24px;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #00B794 0%, #3DD6B6 100%);
+    color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -62,7 +95,7 @@
 }
 
 .adventure-icon i {
-    color: #666;
+    color: white;
     font-size: 2em;
 }
 
@@ -82,7 +115,7 @@
 
 /* Day Divider */
 .day-divider {
-    color: #2196f3;
+    color: #00B794;
     font-size: 1.25rem;
     font-weight: 500;
     margin: 48px 0 24px;
@@ -96,8 +129,8 @@
     left: 0;
     top: 50%;
     width: 100%;
-    height: 1px;
-    background: #e0e0e0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0, 183, 148, 0.1) 0%, rgba(61, 214, 182, 0.1) 100%);
     z-index: 0;
 }
 
@@ -115,12 +148,12 @@
 }
 
 .section-title h2 {
-    color: #2196f3;
+    color: #00B794;
     font-weight: 600;
 }
 
 .day-header {
-    color: #2196f3;
+    color: #00B794;
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
@@ -137,9 +170,23 @@
 
 /* Hero Section Adjustment */
 .main-section.pt-0.pb-0.dark-1-color-bg {
-    min-height: 40vh;
+    position: relative;
+    min-height: 20vh;
     display: flex;
     align-items: center;
+    background: linear-gradient(160deg, #00B794 0%, #3DD6B6 100%);
+    overflow: hidden;
+}
+
+.main-section.pt-0.pb-0.dark-1-color-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(0, 183, 148, 0.4) 0%, rgba(61, 214, 182, 0.1) 100%);
+    z-index: -1;
 }
 
 /* Responsive Styles */
