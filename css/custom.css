@@ -12,3 +12,20 @@
 	width: 100%;
 	height: 100%;
 }
+
+/* Header link colors */
+.header-section-transparent .header-menu-section-container:not(.scroll) .desktop-menu > .navbar-nav > .nav-item > .nav-link:not(.btn) {
+    color: white;
+}
+
+.header-section-transparent .header-menu-section-container:not(.scroll) .desktop-menu > .navbar-nav > .nav-item > .nav-link:not(.btn):hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.header-section-transparent .header-menu-section-container.scroll .desktop-menu > .navbar-nav > .nav-item > .nav-link:not(.btn) {
+    color: #333;
+}
+
+.header-section-transparent .header-menu-section-container.scroll .desktop-menu > .navbar-nav > .nav-item > .nav-link:not(.btn):hover {
+    color: rgba(51, 51, 51, 0.85);
+}
