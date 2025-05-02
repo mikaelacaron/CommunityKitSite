@@ -29,3 +29,18 @@
 .header-section-transparent .header-menu-section-container.scroll .desktop-menu > .navbar-nav > .nav-item > .nav-link:not(.btn):hover {
     color: rgba(51, 51, 51, 0.85);
 }
+
+.luma-checkout--button {
+  background: #181A1A !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s;
+}
