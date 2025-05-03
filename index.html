@@ -794,5 +794,11 @@
         <script src="/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/js/scripts.js"></script>
         <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+        <script>
+          $(function() {
+            // Change only the CTA button in the hero section, not the navbar
+            $(".section-title-content .luma-checkout--button").text("Sign Up for FREE");
+          });
+        </script>
     </body>
 </html>
