@@ -2861,15 +2861,14 @@
             GRAPHICFORT.headerfn.closeSearchForm();
             // Fixed
             if ($('.header-section').hasClass('header-section-fixed') && !isMobile.any()) {
-
                 GRAPHICFORT.headerfn.fixedHeader(pageCurrentPosition);
-
-                if (pageCurrentPosition >= 72) {
-                    $('.header-menu-section-container').addClass('scroll');
-                } else {
-                    $('.header-menu-section-container').removeClass('scroll');
-                }
-
+            }
+            
+            // Handle scroll class for both fixed and transparent headers
+            if (pageCurrentPosition >= 72) {
+                $('.header-menu-section-container').addClass('scroll');
+            } else {
+                $('.header-menu-section-container').removeClass('scroll');
             }
 
             // Animation

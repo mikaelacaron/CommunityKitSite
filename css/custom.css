@@ -44,3 +44,57 @@
   display: inline-block;
   transition: background 0.2s;
 }
+
+/* Mobile header transparency */
+.header-section-transparent .header-menu-section-container {
+    background-color: transparent !important;
+}
+
+.header-section-transparent .header-top-section-container {
+    background-color: transparent !important;
+}
+
+.header-section-transparent .header-menu-section.transparent .header-menu-section-container {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* Header transparency for all screen sizes */
+.header-section-transparent {
+    position: absolute;
+}
+
+.header-section-transparent .navbar-brand .normal,
+.header-section-transparent .header-menu-section-container.stuck.scroll .navbar-brand .transparent {
+    display: none;
+}
+
+.header-section-transparent .navbar-brand .transparent,
+.header-section-transparent .header-menu-section-container.stuck.scroll .navbar-brand .normal {
+    display: block;
+}
+
+/* Top section - transparent by default */
+.header-section-transparent .header-top-section-container {
+    background-color: transparent;
+}
+
+.header-top-section-transparent .header-top-section-container {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+/* Menu container - transparent by default, white when scrolling */
+.header-section-transparent .header-menu-section-container:not(.scroll) {
+    background-color: transparent;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+}
+
+.header-section-transparent .header-menu-section-container.scroll {
+    background-color: white !important;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+}
+
+.header-section-transparent .header-menu-section.transparent .header-menu-section-container:not(.scroll) {
+    box-shadow: none;
+}

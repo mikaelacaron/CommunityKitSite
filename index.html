@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>CommunityKit 1.0 – The Best Way to Experience WWDC</title>
+        <title>CommunityKit | WWDC | June 9th to 11th in Cupertino</title>
         <meta name="author" content="Paul Hudson">
         <meta name="robots" content="index follow">
         <meta name="googlebot" content="index follow">
@@ -21,6 +21,44 @@
         <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/custom.css" />
+        <style>
+            @media (max-width: 600px) {
+                .main-section.pt-0.pb-0.dark-1-color-bg {
+                    padding-top: 3rem !important;
+                    padding-bottom: 3rem !important;
+                }
+                .section-title-heading h1 {
+                    font-size: 2rem !important;
+                }
+                .section-title-content p {
+                    font-size: 1em !important;
+                    line-height: 1.4 !important;
+                    margin-bottom: 1.2rem !important;
+                    padding-left: 1.2rem;
+                    padding-right: 1.2rem;
+                    text-align: center;
+                }
+                .section-title-content span {
+                    font-size: 1em !important;
+                }
+                .section-title-content {
+                    margin-bottom: 2.5rem;
+                    max-width: 28rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+                .luma-checkout--button.btn.btn-lg {
+                    font-size: 1.1rem !important;
+                    padding: 18px 0 !important;
+                    width: 100% !important;
+                    max-width: 320px;
+                }
+                .mt-5 {
+                    margin-top: 2.5rem !important;
+                }
+            }
+        </style>
     </head>
     <body>
         <div id="main-wrapper">
@@ -75,7 +113,7 @@
                     <div class="row main-row justify-content-center">
                         <div id="primary" class="content-area col-lg-12">
                             <main id="main" class="content-area-container site-main">
-                                <div class="main-section pt-0 pb-0 dark-1-color-bg" style="background-image: url(/img/venue.jpg);">
+                                <div class="main-section pt-0 pb-0 dark-1-color-bg" style="background-image: url(/img/header4.png);">
                                     <div class="container gx-4">
                                         <div class="row gx-36 align-items-center justify-content-center height-100vh pt-72 pb-72">
 
@@ -89,7 +127,7 @@
                                                         <div class="section-title-body">
 
                                                             <div class="section-title-heading">
-                                                                <h1 class="font-weight-900">CommunityKit<br>9 to 11 JUNE, CUPERTINO</h1>
+                                                                <h1 class="font-weight-900" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><span style="font-size: 1.4em;">CommunityKit</span><br><span style="font-size: 0.8em;">June 9th to 11th in Cupertino</span></h1>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -103,7 +141,16 @@
                                                         <div class="section-title-body">
 
                                                             <div class="section-title-content">
-                                                                <p class="secondary-font-family white-color">Come and enjoy WWDC with other Apple developers.</p>
+                                                                <p class="secondary-font-family white-color" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-size: 1.2em; font-weight: 600; line-height: 1.2;"><span style="display: block; margin-bottom: 1rem;">New to WWDC or a WWDC veteran?</span>Join us for community meetups, live podcasts, an indie fair, hackathons, and more</p>
+                                                                <div class="mt-5">
+                                                                    <a href="https://lu.ma/event/evt-wdmPipXrrC4XOHL"
+                                                                       class="luma-checkout--button btn btn-danger btn-lg"
+                                                                       data-luma-action="checkout"
+                                                                       data-luma-event-id="evt-wdmPipXrrC4XOHL"
+                                                                       style="display: inline-block; font-weight: 600; font-size: 1.6rem; padding: 32px 48px; border-radius: 30px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s;">
+                                                                        Register for Event
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -747,5 +794,11 @@
         <script src="/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/js/scripts.js"></script>
         <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+        <script>
+          $(function() {
+            // Change all CTA buttons to "Get your FREE Ticket"
+            $(".luma-checkout--button").text("Get your FREE Ticket");
+          });
+        </script>
     </body>
 </html>
