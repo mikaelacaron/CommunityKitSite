@@ -42,6 +42,14 @@
             }
             .schedule-table .event-col {
                 min-width: 200px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 8px;
+            }
+            .schedule-table .event-name {
+                flex: 1;
             }
             .schedule-table .all-rooms {
                 background-color: #f8f9fa;
@@ -70,8 +78,8 @@
                 padding: 4px 12px;
                 border-radius: 4px;
                 text-decoration: none;
-                margin-left: 8px;
                 font-size: 0.9em;
+                white-space: nowrap;
             }
             .reserve-button:hover {
                 background-color: #28a03a;
@@ -85,6 +93,14 @@
                 }
                 .schedule-table .time-col {
                     width: 100px;
+                }
+                .schedule-table .event-col {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 4px;
+                }
+                .reserve-button {
+                    margin-top: 4px;
                 }
             }
         </style>
@@ -190,7 +206,10 @@
                                         </tr>
                                         <tr>
                                             <td class="time-col">4:00 PM - 6:00 PM</td>
-                                            <td class="event-col">Vision Pro Developers Meetup <a href="https://lu.ma/jz8wgmls" target="_blank" class="reserve-button">Reserve Your Spot</a></td>
+                                            <td class="event-col">
+                                                <span class="event-name">Vision Pro Developers Meetup</span>
+                                                <a href="https://lu.ma/jz8wgmls" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>TBA</td>
                                         </tr>
                                     </tbody>
@@ -240,17 +259,26 @@
                                         </tr>
                                         <tr>
                                             <td class="time-col">2:00 PM - 4:00 PM</td>
-                                            <td class="event-col">Apple Intelligence Automators Meetup <a href="https://lu.ma/ai6mx0lr" target="_blank" class="reserve-button">Reserve Your Spot</a></td>
+                                            <td class="event-col">
+                                                <span class="event-name">Apple Intelligence Automators Meetup</span>
+                                                <a href="https://lu.ma/ai6mx0lr" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Room 1</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">2:00 PM - 4:00 PM</td>
-                                            <td class="event-col">try! Swift <a href="https://lu.ma/v554k2fj" target="_blank" class="reserve-button">Reserve Your Spot</a></td>
+                                            <td class="event-col">
+                                                <span class="event-name">try! Swift</span>
+                                                <a href="https://lu.ma/v554k2fj" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Room 2</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">4:00 PM - 6:00 PM</td>
-                                            <td class="event-col">Hacking with Swift <a href="https://lu.ma/4mk22om8" target="_blank" class="reserve-button">Reserve Your Spot</a></td>
+                                            <td class="event-col">
+                                                <span class="event-name">Hacking with Swift</span>
+                                                <a href="https://lu.ma/4mk22om8" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Rooms 1-2</td>
                                         </tr>
                                         <tr>
@@ -295,7 +323,10 @@
                                         </tr>
                                         <tr>
                                             <td class="time-col">4:00 PM - 6:00 PM</td>
-                                            <td class="event-col">Vapor @ WWDC <a href="https://lu.ma/zihfxdqz" target="_blank" class="reserve-button">Reserve Your Spot</a></td>
+                                            <td class="event-col">
+                                                <span class="event-name">Vapor @ WWDC</span>
+                                                <a href="https://lu.ma/zihfxdqz" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Rooms 1-2</td>
                                         </tr>
                                         <tr>
