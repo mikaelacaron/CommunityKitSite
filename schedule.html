@@ -70,9 +70,8 @@
                 padding-bottom: 0.5rem;
                 border-bottom: 2px solid #dee2e6;
             }
-            .reserve-button {
+            .reserve-button, .pink-button, .present-button {
                 display: inline-block;
-                background-color: #2FB344;
                 color: white;
                 font-weight: 600;
                 padding: 4px 12px;
@@ -80,22 +79,27 @@
                 text-decoration: none;
                 font-size: 0.9em;
                 white-space: nowrap;
+                min-width: 140px;
+                text-align: center;
+            }
+            .reserve-button {
+                background-color: #2FB344;
             }
             .reserve-button:hover {
                 background-color: #28a03a;
                 color: white;
                 text-decoration: none;
             }
-            .present-button {
-                display: inline-block;
-                background-color: #007AFF;
+            .pink-button {
+                background-color: #FF69B4;
+            }
+            .pink-button:hover {
+                background-color: #FF1493;
                 color: white;
-                font-weight: 600;
-                padding: 4px 12px;
-                border-radius: 4px;
                 text-decoration: none;
-                font-size: 0.9em;
-                white-space: nowrap;
+            }
+            .present-button {
+                background-color: #007AFF;
             }
             .present-button:hover {
                 background-color: #0066CC;
@@ -206,6 +210,11 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td class="time-col">9:00 AM - 10:00 PM</td>
+                                            <td class="event-col">Hackathon Space</td>
+                                            <td class="hackathon-space">Board Room</td>
+                                        </tr>
+                                        <tr>
                                             <td class="time-col">9:00 AM - 12:00 PM</td>
                                             <td class="event-col">iOSDevHappyHour Keynote Watch Party</td>
                                             <td class="all-rooms">All Rooms</td>
@@ -228,6 +237,14 @@
                                             </td>
                                             <td>Room 1</td>
                                         </tr>
+                                        <tr>
+                                            <td class="time-col">4:00 PM - 6:00 PM</td>
+                                            <td class="event-col">
+                                                <span class="event-name">EmpowerApps.Show LIVE with Leo Dion</span>
+                                                <a href="https://lu.ma/snplx9gn" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
+                                            <td>Room 2</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -246,25 +263,23 @@
                                         <tr>
                                             <td class="time-col">9:00 AM - 10:00 PM</td>
                                             <td class="event-col">Hackathon Space</td>
-                                            <td class="hackathon-space">Room 4</td>
+                                            <td class="hackathon-space">Board Room</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">7:00 AM - 9:00 AM</td>
-                                            <td class="event-col">Women Get Together - Breakfast Meetup</td>
+                                            <td class="event-col">
+                                                <span class="event-name">WWDC Women Get Together - Breakfast</span>
+                                                <a href="https://lu.ma/lcaz5v0q" target="_blank" class="pink-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Rooms 1-3</td>
                                         </tr>
                                         <tr>
-                                            <td class="time-col">9:00 AM - 10:00 AM</td>
+                                            <td class="time-col">9:00 AM - 11:00 AM</td>
                                             <td class="event-col">
                                                 <span class="event-name">Lightning Talks</span>
                                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScA0IWK6m64fLAv97-Oqj5Fr8JtOXQ7SVtBqKN0xOuOF596Lg/viewform?usp=dialog" target="_blank" class="present-button">Register to Present</a>
                                             </td>
                                             <td>Room 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="time-col">11:00 AM - 12:00 PM</td>
-                                            <td class="event-col">Trivia Game with Matt Heaney and Tyler Hillsman</td>
-                                            <td>Rooms 1-3</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">12:00 PM - 2:00 PM</td>
@@ -288,12 +303,20 @@
                                             <td>Room 2</td>
                                         </tr>
                                         <tr>
+                                            <td class="time-col">2:00 PM - 4:00 PM</td>
+                                            <td class="event-col">
+                                                <span class="event-name">RocketSim Meetup 🚀</span>
+                                                <a href="https://t.co/WFWWzNlMMJ" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
+                                            <td>Room 3</td>
+                                        </tr>
+                                        <tr>
                                             <td class="time-col">4:00 PM - 6:00 PM</td>
                                             <td class="event-col">
                                                 <span class="event-name">Hacking with Swift</span>
                                                 <a href="https://lu.ma/4mk22om8" target="_blank" class="reserve-button">Reserve Your Spot</a>
                                             </td>
-                                            <td>Rooms 1-2</td>
+                                            <td>Rooms 1-4</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">6:00 PM - 7:00 PM</td>
@@ -302,7 +325,10 @@
                                         </tr>
                                         <tr>
                                             <td class="time-col">7:00 PM - 10:00 PM</td>
-                                            <td class="event-col">WWDC Scholars Social</td>
+                                            <td class="event-col">
+                                                <span class="event-name">WWDCScholars Meetup #WWDC25</span>
+                                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVb_GYJ5twJYzbg-iaTFi29_1ouKHfPb88A6KGeUZ0uz4fhg/viewform" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Rooms 1-3</td>
                                         </tr>
                                     </tbody>
@@ -323,11 +349,22 @@
                                         <tr>
                                             <td class="time-col">8:00 AM - 6:00 PM</td>
                                             <td class="event-col">Hackathon Space</td>
-                                            <td class="hackathon-space">Room 4</td>
+                                            <td class="hackathon-space">Board Room</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time-col">9:00 AM - 10:00 AM</td>
+                                            <td class="event-col">
+                                                <span class="event-name">Trivia Game with Matt Heaney and Tyler Hillsman</span>
+                                                <a href="https://lu.ma/1eldc9q3" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
+                                            <td>Rooms 1-3</td>
                                         </tr>
                                         <tr>
                                             <td class="time-col">11:00 AM - 12:00 PM</td>
-                                            <td class="event-col">Launched LIVE with Charlie Chapman</td>
+                                            <td class="event-col">
+                                                <span class="event-name">Launched LIVE with Charlie Chapman</span>
+                                                <a href="https://lu.ma/htlbbu10" target="_blank" class="reserve-button">Reserve Your Spot</a>
+                                            </td>
                                             <td>Rooms 1-3</td>
                                         </tr>
                                         <tr>
@@ -336,7 +373,7 @@
                                             <td class="all-rooms">All Rooms</td>
                                         </tr>
                                         <tr>
-                                            <td class="time-col">2:00 PM - 3:00 PM</td>
+                                            <td class="time-col">2:00 PM - 4:00 PM</td>
                                             <td class="event-col">
                                                 <span class="event-name">Indie Fair</span>
                                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMwmzORBNswW8qrzjJXwelaAJPb9o92l3uSUS-LBNVg1Ggqg/viewform?usp=dialog" target="_blank" class="present-button">Register to Present</a>
