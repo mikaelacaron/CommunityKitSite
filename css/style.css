@@ -13366,8 +13366,12 @@ input[type="checkbox"].form-control::after {
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(2px);
-    transform: translateY(-50px);
+    transform: translateY(-25px);
     z-index: -1;
+}
+
+.appjam-gradient-section p {
+    color: #ffffff !important;
 }
 
 .appjam-logo {
@@ -13402,7 +13406,7 @@ input[type="checkbox"].form-control::after {
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     border: 2px solid #ffffff;
