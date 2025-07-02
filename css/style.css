@@ -13326,3 +13326,96 @@ input[type="checkbox"].form-control::after {
 .light-color .section-copyright-container {
     border-color: rgba(255, 255, 255, 0.07);
 }
+
+/* Custom CommunityKit Registration Button */
+.custom-register-btn {
+    background-color: #F0545C !important;
+    border-color: #F0545C !important;
+    color: white !important;
+}
+
+.custom-register-btn:hover {
+    background-color: #d9434b !important;
+    border-color: #d9434b !important;
+    color: white !important;
+}
+
+.custom-register-btn:focus,
+.custom-register-btn:active {
+    background-color: #c23d45 !important;
+    border-color: #c23d45 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(240, 84, 92, 0.25) !important;
+}
+
+/* AppJam Background Section */
+.appjam-gradient-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.appjam-gradient-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/appmapbg.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    transform: translateY(-25px);
+    z-index: -1;
+}
+
+.appjam-gradient-section p {
+    color: #ffffff !important;
+}
+
+.appjam-logo {
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.appjam-logo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .appjam-logo {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appjam-logo {
+        max-width: 280px;
+    }
+}
+
+.appjam-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid #ffffff;
+}
+
+.appjam-button:hover {
+    background-color: #f8f8f8;
+    color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
