@@ -23,6 +23,66 @@
         <link rel="stylesheet" href="/css/custom.css" />
         <link rel="stylesheet" href="/css/schedule.css" />
         <style>
+            /* AppJam Schedule Styles */
+            .appjam-schedule-table {
+                border-collapse: separate;
+                border-spacing: 0;
+                margin: 20px auto;
+                font-family: 'Poppins', sans-serif;
+                width: 100%;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 3rem;
+            }
+            .appjam-schedule-table thead {
+                background-color: #F0545C;
+            }
+            .appjam-schedule-table thead th {
+                color: #ffffff;
+                text-align: left;
+                padding: 12px 15px;
+                font-size: 1rem;
+                border: none;
+                font-weight: 600;
+            }
+            .appjam-schedule-table tbody tr {
+                transition: background-color 0.3s ease;
+            }
+            .appjam-schedule-table tbody tr:nth-of-type(even) {
+                background-color: #fef5f5;
+            }
+            .appjam-schedule-table tbody tr:hover {
+                background-color: #ffe0e1;
+            }
+            .appjam-schedule-table td {
+                padding: 12px 15px;
+                border: none;
+            }
+            /* Date rows for AppJam */
+            .appjam-date-row td {
+                background-color: #f8d7da;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-top: 1px solid #f1aeb5;
+                color: #721c24;
+            }
+            /* Rounded corners on header */
+            .appjam-schedule-table thead th:first-child {
+                border-top-left-radius: 12px;
+            }
+            .appjam-schedule-table thead th:last-child {
+                border-top-right-radius: 12px;
+            }
+            /* Rounded corners on bottom */
+            .appjam-schedule-table tbody tr:last-child td:first-child {
+                border-bottom-left-radius: 12px;
+            }
+            .appjam-schedule-table tbody tr:last-child td:last-child {
+                border-bottom-right-radius: 12px;
+            }
+
+            /* Existing CommunityKit Schedule Styles */
             .schedule-table {
                 width: 100%;
                 margin-bottom: 2rem;
@@ -107,7 +167,7 @@
                 text-decoration: none;
             }
             @media (max-width: 768px) {
-                .schedule-table {
+                .schedule-table, .appjam-schedule-table {
                     display: block;
                     overflow-x: auto;
                 }
@@ -121,6 +181,9 @@
                 }
                 .reserve-button {
                     margin-top: 4px;
+                }
+                .appjam-schedule-table {
+                    width: 90%;
                 }
             }
         </style>
@@ -195,12 +258,87 @@
                 <div class="container mt-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
-<!--
-                            <p class="text-center mb-5" style="font-size: 1.1rem; color: #2FB344; font-family: 'Poppins', sans-serif; font-weight: 500;">
-                                CommunityKit is still compiling, so check back often for the latest updates to the schedule! 🚀
-                            </p>
--->
-                            <h2 class="text-center mb-5">Day 1: Mon, June 9 2025</h2>
+                            <!-- AppJam Schedule -->
+                            <h2 class="text-center mb-4" style="color: #F0545C; font-weight: 700;">AppJam 2025 Schedule</h2>
+                            
+                            <table class="appjam-schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Event</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="appjam-date-row">
+                                        <td colspan="2">Friday, Aug 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:00 GMT / 10am ET / 7am PT</td>
+                                        <td>AppJam Opening</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21:00 GMT / 5pm ET / 2pm PT</td>
+                                        <td>Day 1 Recap Video</td>
+                                    </tr>
+
+                                    <tr class="appjam-date-row">
+                                        <td colspan="2">Saturday, Aug 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 GMT / 11am ET / 8am PT</td>
+                                        <td>Day Two Message Blast</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00 – 17:00 GMT / 12pm–1pm ET / 7am – 8am PT</td>
+                                        <td>RevenueCat In App Purchases + Paywall Office Hours, featuring Charlie Chapman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20:00 – 21:00 GMT / 4pm–5pm ET / 1pm – 2pm PT</td>
+                                        <td>Open Design Guidance with Tamia James</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21:00 GMT / 5pm ET / 2pm PT</td>
+                                        <td>Day 2 Recap Video</td>
+                                    </tr>
+
+                                    <tr class="appjam-date-row">
+                                        <td colspan="2">Sunday, Aug 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 GMT / 11am ET / 8am PT</td>
+                                        <td>Day Three Message Blast</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00 GMT / 12pm ET / 9am PT</td>
+                                        <td>Co-working with Mikaela Caron, Q&A about setting up RevenueCat tools and other topics</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21:00 GMT / 5pm ET / 2pm PT</td>
+                                        <td>AppJam Wrapup</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22:00 GMT / 6pm ET / 3pm PT</td>
+                                        <td>Project expo: demonstrate your hard work!</td>
+                                    </tr>
+
+                                    <tr class="appjam-date-row">
+                                        <td colspan="2">Monday, Aug 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 GMT / 11am ET / 8am PT</td>
+                                        <td>Submission day message</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21:00 GMT / 5pm ET / 2pm PT</td>
+                                        <td>Submissions close</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- CommunityKit Schedule -->
+                            <h2 class="text-center mb-5 mt-5" style="color: #4CD964; font-weight: 700;">CommunityKit 2025 Schedule</h2>
+                            
+                            <h3 class="text-center mb-5">Day 1: Mon, June 9 2025</h3>
                             <div class="schedule-container">
                                 <table class="schedule-table">
                                     <thead>
