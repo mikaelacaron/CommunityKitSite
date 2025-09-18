@@ -13348,6 +13348,27 @@ input[type="checkbox"].form-control::after {
     box-shadow: 0 0 0 0.2rem rgba(240, 84, 92, 0.25) !important;
 }
 
+/* Custom CommunityKit Featured Apps Button */
+.custom-featured-apps-btn {
+    background-color: #1677be !important;
+    border-color: #1677be !important;
+    color: white !important;
+}
+
+.custom-featured-apps:hover {
+    background-color: #0865a7 !important;
+    border-color: #0865a7 !important;
+    color: white !important;
+}
+
+.custom-featured-apps:focus,
+.custom-featured-apps:active {
+    background-color: #064a7a !important;
+    border-color: #064a7a !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(240, 84, 92, 0.25) !important;
+}
+
 /* AppJam Background Section */
 .appjam-gradient-section {
     padding: 80px 0;

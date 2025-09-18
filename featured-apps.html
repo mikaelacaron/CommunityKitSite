@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Featured Apps - CommunityKit 1.0</title>
+        <meta name="author" content="CommunityKit Team">
+        <meta name="robots" content="index follow">
+        <meta name="googlebot" content="index follow">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="wwdc, event, swift, xcode, funsies, community, wwdc25">
+        <meta name="description" content="CommunityKit schedule and details.">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/img/favicon/favicon-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/img/favicon/favicon-180x180.png" />
+        <meta name="msapplication-TileImage" content="/img/favicon/favicon-270x270.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/js/vendor/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/custom.css" />
+
+        <style>
+            body { font-family: system-ui, sans-serif; padding: 0px; background: #f9fafb; }
+            table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+            th { background: #f5f5f5; }
+            img { max-height: 128px; max-width: 128px; }
+          
+            /* Default desktop table */
+            table.responsive { width: 100%; }
+          
+            /* Mobile stacked card style */
+            @media (max-width: 768px) {
+              table.responsive,
+              table.responsive thead,
+              table.responsive tbody,
+              table.responsive th,
+              table.responsive td,
+              table.responsive tr {
+                display: block;
+                width: 100%;
+              }
+          
+              /* Hide headers */
+              table.responsive thead {
+                display: none;
+              }
+          
+              table.responsive tr {
+                margin-bottom: 1rem;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+                overflow: hidden;
+                padding: 10px 12px;
+              }
+          
+              table.responsive td {
+                border: none;
+                display: block;
+                padding: 8px 0;
+                text-align: left;
+              }
+          
+              table.responsive td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: #666;
+                margin-bottom: 2px;
+              }
+          
+              table.responsive td img {
+                max-height: 128px;
+                max-width: 128px;
+                border-radius: 6px;
+              }
+            }
+          </style>
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div id="main-container">
+                <header class="header-section header-section-fixed header-section-transparent">
+                    <div class="header-section-container">
+                        <div class="header-menu-section transparent">
+                            <div class="header-menu-section-container">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="container gx-4">
+                                        <a class="navbar-brand p-2" href="/" title="CommunityKit">
+                                            <img src="/img/logo-color.svg" style="width: 250px;" alt="CommunityKit" class="normal" />
+                                            <img src="/img/logo-white.svg" style="width: 250px;" alt="CommunityKit" class="transparent" />
+                                        </a>
+
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-lines-wrapper">
+                                                <i class="navbar-toggler-line navbar-toggler-line-top"></i>
+                                                <i class="navbar-toggler-line navbar-toggler-line-middle"></i>
+                                                <i class="navbar-toggler-line navbar-toggler-line-bottom"></i>
+                                            </span>
+                                        </button>
+
+                                        <div class="header-menu desktop-menu navbar-collapse">
+                                            <ul class="navbar-nav ms-auto">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/events.html">Overview</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/schedule.html">Schedule</a>
+                                                </li>
+                                                <li class="nav-item headerbtn">
+                                                    <a href="/featured-apps.html"
+                                                       class="nav-link btn btn-block btn-sm btn-round btn-outline-reverse custom-featured-apps-btn">
+                                                        View Featured Apps
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="header-menu mobile-menu collapse" id="mobile-menu">
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="main-section pt-0 pb-0" style="background: linear-gradient(135deg, #20c997 0%, #20c997 100%);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 text-center">
+                                <div class="section-title section-title-intro text-center light-color mb-6">
+                                    <div class="section-title-container">
+                                        <div class="section-title-body">
+                                            <div class="section-title-heading">
+                                                <h1 class="font-weight-900 text-white mb-0 py-8" style="padding-top: 100px; padding-bottom: 100px;">Featured OS26 Apps</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-section pt-5 pb-5" style="padding-left: 40px; padding-right: 40px;" id="submissions">Loading...</div>
+                <!-- Footer -->
+                <footer id="colophon" class="footer-section site-footer">
+                    <div class="footer-section-container">
+                        <div class="footer-section-top">
+                            <div class="main-section">
+                                <div class="container gx-4">
+                                    <div class="row gx-36">
+                                        <div class="col-lg-12">
+                                            <div class="widget widget_image text-center mb-36">
+                                                <a href="/" title="CommunityKit">
+                                                    <img src="/img/logo-white.svg" style="width: 350px;" alt="CommunityKit" />
+                                                </a>
+                                            </div>
+                                            <div class="widget widget_text light-color text-center">
+                                                <div class="textwidget">
+                                                    <p>&copy; <span class="current-year">2025</span> CommunityKit.social. All rights reserved. | <a href="/code-of-conduct.html">Code of Conduct</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+        
+        <script src="/js/vendor/jquery/jquery-3.6.0.min.js"></script>
+        <script src="/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            async function loadSubmissions() {
+              try {
+                const rawURL = "https://raw.githubusercontent.com/community-kit/CommunityKit-Release-Feature-List/main/README.md";
+                const resp = await fetch(rawURL);
+                if (!resp.ok) throw new Error("Failed to fetch README");
+                const text = await resp.text();
+            
+                // Find 📚 Submissions section
+                const lines = text.split("\n");
+                const start = lines.findIndex(line => line.includes("📚") && line.toLowerCase().includes("submission"));
+                if (start === -1) {
+                  document.getElementById("submissions").innerText = "⚠️ Submissions section not found.";
+                  return;
+                }
+            
+                const collected = [];
+                for (let i = start; i < lines.length; i++) {
+                  if (i > start && lines[i].startsWith("#")) break;
+                  collected.push(lines[i]);
+                }
+                let section = collected.join("\n");
+            
+                const repoBase = "https://raw.githubusercontent.com/community-kit/CommunityKit-Release-Feature-List/main/";
+            
+                function fixUrl(url) {
+                  let newUrl = url.trim();
+                  if (newUrl.startsWith("http")) {
+                    return newUrl
+                      .replace("https://github.com/", "https://raw.githubusercontent.com/")
+                      .replace("/blob/", "/");
+                  } else {
+                    return repoBase + newUrl.replace(/^\.?\//, "");
+                  }
+                }
+            
+                // Fix Markdown images ![alt](url)
+                section = section.replace(/!\[(.*?)\]\((.*?)\)/g, (_, alt, url) => {
+                  return `![${alt}](${fixUrl(url)})`;
+                });
+            
+                // Fix HTML images <img src="...">
+                section = section.replace(/<img\s+([^>]*?)src=["'](.*?)["'](.*?)>/g, (_, before, url, after) => {
+                  return `<img ${before}src="${fixUrl(url)}"${after}>`;
+                });
+            
+                // Render Markdown
+            document.getElementById("submissions").innerHTML = marked.parse(section);
+            
+            // Make tables responsive stacked
+            document.querySelectorAll("#submissions table").forEach(table => {
+              table.classList.add("responsive");
+            
+              const headers = Array.from(table.querySelectorAll("thead th"))
+                .map(th => th.innerText.trim());
+            
+              table.querySelectorAll("tbody tr").forEach(row => {
+                row.querySelectorAll("td").forEach((cell, i) => {
+                  if (headers[i]) {
+                    cell.setAttribute("data-label", headers[i]);
+                  }
+                });
+              });
+            });
+            
+            
+              } catch (err) {
+                document.getElementById("submissions").innerText = "Error: " + err.message;
+                console.error(err);
+              }
+            }
+            
+            loadSubmissions();
+        </script>
+    </body>
+</html>
